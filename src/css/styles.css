@@ -5,14 +5,8 @@
   |============================
 */
 /* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+
+@import url('node_modules/modern-normalize/modern-normalize.css')
 
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+
