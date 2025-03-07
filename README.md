@@ -3,7 +3,7 @@
 - Team lead: Олексій Пружанський
 - Scrum-master: Дмитро
 - Члени команди: Олена Кодола, Олексій Зюзін, Анастасія Тоцька, Ірина
-  Сухомлин, Мирослава Осадча, Степан
+  Сухомлин, Мирослава Осадча, Степан Перен, Анна Тарнавська
 
   ТЗ: https://docs.google.com/spreadsheets/d/1azRSKj2AE0FayFVo_DkUqr6e6ZNelDiPhDzbWWYX3uc/edit#gid=0
 
