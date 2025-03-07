@@ -1,0 +1,94 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+.covers-container {
+    max-width: 375px;
+    max-height: 508px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content {
+    position: relative;
+    background: border-box url(../img/projects/elements_vectors.png);
+    background-color: black;
+  }
+  .marquee {
+    height: 508px;
+    width: 375px;
+    /* position: absolute;
+    right: -800px;
+    left: 0; */
+    overflow: hidden;
+    font-family: "Pridi", sans-serif;
+    /* font-weight: 600;
+    font-size: 34px;
+    text-transform: uppercase; */
+  }
+  
+  .marquee__inner {
+     height: auto;
+     display: flex;
+     justify-content: space-between;
+     transform: rotate(16deg);
+     margin-bottom: 30px;
+  }
+  
+  /* .marquee__line {
+    background-color: #FFDC00;
+    flex-shrink: 0;
+    margin-right: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 2); 
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  } */
+
+  .marquee__line {
+    flex-shrink: 0;
+    margin-right: 20px;
+    width: 282px;
+    height: 162px;
+    overflow: hidden;
+    border-radius: 12px;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  .marquee__line img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  @keyframes marqueeLine {
+    from {
+      transform: translateX(-20%);
+    }
+    
+    to {
+      transform: translateX(-180%);
+    }
+  }
+  
