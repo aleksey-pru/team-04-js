@@ -126,7 +126,6 @@
 
   .marquee {
     width: 1440px;
-    background-image: url(../img/projects/elements_vectors.png);
-    background-color: rgba(217, 217, 217, 0.04);
+    background: border-box url(../img/projects/Rectangle_13_2.png);
   }
 }
