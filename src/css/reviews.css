@@ -1,6 +1,7 @@
 .reviews {
   background-color: #1c1d20;
-  padding: 82px 0;
+  padding: 164px 0 0;
+  font-family: 'Inter Tight', sans-serif;
 }
 
 .container-reviews {
@@ -37,8 +38,6 @@
 .review-card {
   border-radius: 20px;
   padding: 32px 24px;
-  width: 332px;
-  height: 302px;
   text-align: left;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
@@ -138,7 +137,7 @@
 
 @media screen and (max-width: 1439px) {
   .reviews {
-    padding: 48px 0;
+    padding: 96px 0 0;
   }
   .slider-icon {
     width: 24px;
@@ -151,7 +150,7 @@
 
 @media screen and (max-width: 767px) {
   .reviews {
-    padding: 32px 0;
+    padding: 64px 0 0;
   }
   .reviews-title {
     font-size: 16px;
