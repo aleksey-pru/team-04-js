@@ -51,7 +51,6 @@ a {
   margin-right: auto;
 
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 4px;
