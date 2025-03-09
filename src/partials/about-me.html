@@ -1,4 +1,4 @@
-<section class="about-me-page">
+<section class="about-me-page" id="about-me">
   <div class="container">
     <h2 class="visually-hidden">About me</h2>
     <div class="about-me-card">
@@ -11,22 +11,22 @@
       <picture>
         <source
           srcset="
-            ../img/projects/tab/man-image.png 1x,
-            ../img/projects/tab/man-image.png 2x
+            ../img/projects/man-image.png    1x,
+            ../img/projects/man-image-2x.png 2x
           "
-          media="(min-width: 1158px)"
+          media="(min-width: 1440px)"
         />
         <source
           srcset="
-            ../img/projects/tab/man-image.png 1x,
-            ../img/projects/tab/man-image.png 2x
+            ../img/projects/tab/man-image-tab.png    1x,
+            ../img/projects/tab/man-image-tab-2x.png 2x
           "
           media="(min-width: 768px)"
         />
         <source
           srcset="
-            ../img/projects/mob/man-image.png 1x,
-            ../img/projects/mob/man-image.png 2x
+            ../img/projects/mob/man-image-mob.png    1x,
+            ../img/projects/mob/man-image-mob-2x.png 2x
           "
           media="(max-width: 767px)"
         />
@@ -39,13 +39,19 @@
       </picture>
     </div>
 
-    <ul class="about-me-list">
-      <li class="about-me-item">
-        <div class="about-me-box-menu">
+    <!-- -----------   Accordion   ----------- -->
+
+    <ul class="about-me-list accordion-container">
+      <li class="about-me-item ac">
+        <div class="about-me-box-menu ac-header">
           <h3 class="about-me-list-title">About me</h3>
-          <div class="icon"></div>
+          <button class="about-me-ac-button ac-trigger" type="button">
+            <svg class="about-me-svg" width="32" height="32">
+              <use href="../img/icons.svg/#icon-arrow-down"></use>
+            </svg>
+          </button>
         </div>
-        <div class="about-me-list-text">
+        <div class="about-me-list-text ac-panel">
           <p class="about-me-item-text">
             I am Lloyd Jefferson, a talented programmer with extensive expertise
             in software development. I have an understanding of different
@@ -69,23 +75,31 @@
           </p>
         </div>
       </li>
-      <li class="about-me-item">
-        <div class="about-me-box-menu">
+      <li class="about-me-item ac">
+        <div class="about-me-box-menu ac-header">
           <h3 class="about-me-list-title">rOLE</h3>
-          <div class="icon"></div>
+          <button class="about-me-ac-button ac-trigger" type="button">
+            <svg class="about-me-svg" width="32" height="32">
+              <use href="../img/icons.svg/#icon-arrow-down"></use>
+            </svg>
+          </button>
         </div>
-        <div class="about-me-list-text">
+        <div class="about-me-list-text ac-panel">
           <p class="about-me-item-text">Frontend development</p>
           <p class="about-me-item-text">HeadlessCMS,Wordpress</p>
           <p class="about-me-item-text">Blender(enjoy)</p>
         </div>
       </li>
-      <li class="about-me-item">
-        <div class="about-me-box-menu">
+      <li class="about-me-item ac">
+        <div class="about-me-box-menu ac-header">
           <h3 class="about-me-list-title">eDUCATION</h3>
-          <div class="icon"></div>
+          <button class="about-me-ac-button ac-trigger" type="button">
+            <svg class="about-me-svg" width="32" height="32">
+              <use href="../img/icons.svg/#icon-arrow-down"></use>
+            </svg>
+          </button>
         </div>
-        <div class="about-me-list-text">
+        <div class="about-me-list-text ac-panel">
           <p class="about-me-item-text">
             2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
           </p>
@@ -99,24 +113,24 @@
         </div>
       </li>
     </ul>
-
-    <div class="swiper">
-      <ul class="swiper-wrapper">
-        <li class="swiper-slide">HTML/CSS</li>
-        <li class="swiper-slide">JavaScript</li>
-        <li class="swiper-slide">React</li>
-        <li class="swiper-slide">Node.js</li>
-        <li class="swiper-slide">React Native</li>
-        <li class="swiper-slide">Soft skills</li>
-      </ul>
-
-      <div class="swiper-pagination"></div>
+    <!-- ---------------Swiper----------- -->
+    <div class="box-slide">
+      <div class="about-me-slide swiper">
+        <ul class="about-me-slide-list swiper-wrapper">
+          <li class="first-slide about-me-slide-item swiper-slide">HTML/CSS</li>
+          <li class="about-me-slide-item swiper-slide">JavaScript</li>
+          <li class="about-me-slide-item swiper-slide">React</li>
+          <li class="about-me-slide-item swiper-slide">Node.js</li>
+          <li class="about-me-slide-item swiper-slide">React Native</li>
+          <li class="about-me-slide-item swiper-slide">Soft skills</li>
+          <li class="about-me-slide-item swiper-slide">Python</li>
+        </ul>
+      </div>
+      <div class="about-me-slide-button">
+        <svg class="slide-svg" height="32" width="32">
+          <use href="../img/icons.svg#icon-arrow-narrow-right"></use>
+        </svg>
+      </div>
     </div>
   </div>
-  <!-- <picture>
-    <source srcset="1x, 2x" media="(min-width: 1158px)" />
-    <source srcset="1x, 2x" media="(min-width: 768px)" />
-    <source srcset="1x, 2x" media="(max-width: 767px)" />
-    <img class="" src="" alt="" width="360" />
-  </picture> -->
 </section>
