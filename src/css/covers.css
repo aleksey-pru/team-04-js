@@ -76,3 +76,57 @@
 
 /* tablet */
 
+@media (min-width: 768px) {
+  .covers {
+    padding-top: 96px;
+  }
+
+  .covers-container {
+    max-width: 768px;
+    max-height: 960px;
+  }
+  
+  .marquee {
+    width: 768px;
+    height: 960px;
+    background: border-box url(../img/projects/Rectangle_13_1.png);
+  }
+  
+  .marquee__inner {
+    margin-bottom: 50px;
+  }
+
+  .marquee__line {
+    width: 544px;
+    height: 314px;
+    margin-right: 50px;
+  }
+
+  @keyframes marqueeLine {
+    from {
+      transform: translateX(-20%);
+    }
+  
+    to {
+      transform: translateX(-160%);
+    }
+  }
+}
+
+/* desktop */
+
+@media (min-width: 1440px) {
+  .covers {
+    padding-top: 164px;
+  }
+
+  .covers-container {
+    max-width: 1440px;
+  }
+
+  .marquee {
+    width: 1440px;
+    background-image: url(../img/projects/elements_vectors.png);
+    background-color: rgba(217, 217, 217, 0.04);
+  }
+}
