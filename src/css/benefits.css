@@ -1,7 +1,7 @@
 .benefits {
   padding-top: 64px;
-  padding-bottom: 64px;
   background: #1c1d20;
+  font-family: Inter Tight, sans-serif;
 }
 .container {
   max-width: 375px;
@@ -30,6 +30,9 @@
   margin-bottom: 32px;
 }
 .benefits-list-item-svg {
+  fill: #fafafa;
+}
+.benefits-svg-container {
   border-radius: 10px;
   width: 48px;
   height: 48px;
@@ -61,7 +64,6 @@
   font-size: 15px;
   letter-spacing: -0.02em;
   color: #fafafa;
-  display: flex;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -71,7 +73,6 @@
   }
   .benefits {
     padding-top: 96px;
-    padding-bottom: 96px;
   }
   .benefits-list {
     display: flex;
