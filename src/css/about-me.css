@@ -1,6 +1,7 @@
 .about-me {
   background: #1c1d20;
-  padding-bottom: 64px;
+  font-family: 'Inter Tight', sans-serif;
+  padding-top: 64px;
 }
 
 .about-me-container {
@@ -169,7 +170,7 @@
 
 @media screen and (min-width: 768px) {
   .about-me {
-    padding-bottom: 64px;
+    padding-top: 64px;
   }
 
   .about-me-container {
@@ -207,7 +208,7 @@
 
 @media screen and (min-width: 1440px) {
   .about-me {
-    padding: 96px;
+    padding-top: 96px;
   }
 
   .about-me-container {
