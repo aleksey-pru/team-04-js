@@ -20,14 +20,6 @@ const swiper = new Swiper('.projects-swiper', {
     prevEl: '.swiper-btn-left',
     disabledClass: 'swiper-btn-disabled',
   },
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 1,
-//     },
-//     1440: {
-//       slidesPerView: 1,
-//     }
-//     },
   watchOverflow: true,
 });
 
