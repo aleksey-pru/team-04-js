@@ -277,7 +277,7 @@ img{
 @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            .hero {
+            .mobile-menu {
                 background-image: url(/img/hero/hero-mob@2x.png);
             }
         }
