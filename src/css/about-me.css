@@ -1,6 +1,6 @@
 .about-me {
   background: #1c1d20;
-  padding: 32px 0;
+  padding-bottom: 64px;
 }
 
 .about-me-container {
@@ -71,7 +71,7 @@
   font-size: 16px;
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
-
+  padding-bottom: 32px !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -169,7 +169,7 @@
 
 @media screen and (min-width: 768px) {
   .about-me {
-    padding-bottom: 48px;
+    padding-bottom: 64px;
   }
 
   .about-me-container {
@@ -207,7 +207,7 @@
 
 @media screen and (min-width: 1440px) {
   .about-me {
-    padding: 48px 0 82px;
+    padding: 96px;
   }
 
   .about-me-container {

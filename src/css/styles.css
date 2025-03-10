@@ -21,6 +21,7 @@
 @import url('./projects.css');
 @import url('./work-together.css');
 @import url('./reviews.css');
+@import url('./reset.css');
 
 .visually-hidden {
   position: absolute;
