@@ -12,6 +12,8 @@
   overflow: hidden;
 }
 
+
+
 .covers {
   padding-top: 64px;
   background-color: #1c1d20;
@@ -51,6 +53,7 @@
 }
 
 .marquee__line {
+  animation-play-state: paused;
   flex-shrink: 0;
   margin-right: 20px;
   width: 282px;
