@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <script type="module" crossorigin src="/team-04-js/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/team-04-js/assets/vendor-Deh5FPyf.js">
-    <link rel="stylesheet" crossorigin href="/team-04-js/assets/vendor-Be9b3THL.css">
-    <link rel="stylesheet" crossorigin href="/team-04-js/assets/index-CEm1WqFI.css">
+    <link rel="modulepreload" crossorigin href="/team-04-js/assets/vendor-DkpD6KSx.js">
+    <link rel="stylesheet" crossorigin href="/team-04-js/assets/vendor-ChYLXj1N.css">
+    <link rel="stylesheet" crossorigin href="/team-04-js/assets/index-cHw2eO6F.css">
   </head>
   <body>
       <header class="header  fixed" id="header">
@@ -146,7 +146,136 @@
   </div>
 </section>
 
-        
+        <section class="about-me" id="about-me">
+  <div class="about-me-container">
+    <h2 class="visually-hidden">About me</h2>
+    <div class="about-me-card">
+      <p class="about-me-title">
+        I work with people all over the world to create impressive and
+        <span class="title-part-red">functional</span>
+        <span class="title-part-grey">websites</span> that reflect each client's
+        unique personality.
+      </p>
+      <picture>
+        <source
+          srcset="/team-04-js/assets/man-image-ULZLRI78.png 1x, /team-04-js/assets/man-image-2x-D87dzCTk.png 2x"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="/team-04-js/assets/man-image-tab-C9eYXVLD.png 1x, /team-04-js/assets/man-image-tab-2x-B0sJxx3T.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/team-04-js/assets/man-image-mob-D1xH183i.png 1x, /team-04-js/assets/man-image-mob-2x-ys1AIKwi.png 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          class="about-me-img"
+          src="/img/projects/tab/man-image.png"
+          alt="man-photo"
+          width="680"
+        />
+      </picture>
+    </div>
+
+    <!-- -----------   Accordion   ----------- -->
+
+    <ul class="about-me-list accordion-container">
+      <li class="about-me-item ac">
+        <h3 class="about-me-list-title ac-header">
+          About me
+          <button class="about-me-ac-button ac-trigger" type="button">
+            <svg class="about-me-svg" width="20" height="20">
+              <use href="/team-04-js/assets/icons-C2NAn8ql.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="about-me-list-text ac-panel">
+          <p class="about-me-item-text">
+            I am Lloyd Jefferson, a talented programmer with extensive expertise
+            in software development. I have an understanding of different
+            programming languages ​​and technologies, always ready to improve my
+            skills. I always follow the latest trends and look for
+            unconventional, creative solutions to problems. I have a high level
+            of analytical skills and am able to effectively solve even the most
+            difficult tasks encountered on the way.
+          </p>
+          <p class="about-me-item-text">
+            Able to work both independently and in a team. I can effectively
+            cooperate with colleagues, exchanging ideas and finding optimal
+            solutions. Professional maturity allows you to calmly cope with
+            challenges and stressful situations, while maintaining a high
+            quality of work. I am always looking for opportunities for
+            self-improvement. I actively study new technologies and practices to
+            stay abreast of the latest innovations. I have a strong
+            understanding of various programming languages, frameworks and
+            architectural concepts that allow me to create efficient and
+            scalable software.
+          </p>
+        </div>
+      </li>
+      <li class="about-me-item ac">
+        <h3 class="about-me-list-title ac-header">
+          rOLE
+          <button class="about-me-ac-button ac-trigger" type="button">
+            <svg class="about-me-svg" width="20" height="20">
+              <use href="/team-04-js/assets/icons-C2NAn8ql.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="about-me-list-text ac-panel">
+          <p class="about-me-item-text">Frontend development</p>
+          <p class="about-me-item-text">HeadlessCMS,Wordpress</p>
+          <p class="about-me-item-text">Blender(enjoy)</p>
+        </div>
+      </li>
+      <li class="about-me-item ac">
+        <h3 class="about-me-list-title ac-header">
+          eDUCATION
+          <button class="about-me-ac-button ac-trigger" type="button">
+            <svg class="about-me-svg" width="20" height="20">
+              <use href="/team-04-js/assets/icons-C2NAn8ql.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="about-me-list-text ac-panel">
+          <p class="about-me-item-text">
+            2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+          </p>
+          <p class="about-me-item-text">
+            2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+            New York
+          </p>
+          <p class="about-me-item-text">
+            2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+          </p>
+        </div>
+      </li>
+    </ul>
+
+    <!-- ---------------Swiper----------- -->
+
+    <div class="box-slide">
+      <div class="about-me-slide swiper">
+        <ul class="about-me-slide-list swiper-wrapper">
+          <li class="first-slide about-me-slide-item swiper-slide">HTML/CSS</li>
+          <li class="about-me-slide-item swiper-slide">JavaScript</li>
+          <li class="about-me-slide-item swiper-slide">React</li>
+          <li class="about-me-slide-item swiper-slide">Node.js</li>
+          <li class="about-me-slide-item swiper-slide">React Native</li>
+          <li class="about-me-slide-item swiper-slide">Soft skills</li>
+          <li class="about-me-slide-item swiper-slide">Python</li>
+        </ul>
+      </div>
+      <div class="about-me-slide-button">
+        <svg class="slide-svg" height="28" width="28">
+          <use href="/team-04-js/assets/icons-C2NAn8ql.svg#icon-arrow-narrow-right"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
         
         
 
@@ -161,10 +290,10 @@
           </h3>
           <div class="faq-toggle">
             <svg class="icon-down" width="20" height="20">
-              <use href="/team-04-js/assets/icons-vBFqUzCb.svg#icon-arrow-down"></use>
+              <use href="/team-04-js/assets/icons-C2NAn8ql.svg#icon-arrow-down"></use>
             </svg>
             <svg class="icon-up" width="20" height="20">
-              <use href="/team-04-js/assets/icons-vBFqUzCb.svg#icon-arrow-up"></use>
+              <use href="/team-04-js/assets/icons-C2NAn8ql.svg#icon-arrow-up"></use>
             </svg>
           </div>
         </div>
@@ -181,10 +310,10 @@
           <h3>How can I contact you?</h3>
           <div class="faq-toggle">
             <svg class="icon-down" width="20" height="20">
-              <use href="/team-04-js/assets/icons-vBFqUzCb.svg#icon-arrow-down"></use>
+              <use href="/team-04-js/assets/icons-C2NAn8ql.svg#icon-arrow-down"></use>
             </svg>
             <svg class="icon-up" width="20" height="20">
-              <use href="/team-04-js/assets/icons-vBFqUzCb.svg#icon-arrow-up"></use>
+              <use href="/team-04-js/assets/icons-C2NAn8ql.svg#icon-arrow-up"></use>
             </svg>
           </div>
         </div>
@@ -201,10 +330,10 @@
           <h3>What are the deadlines for the project?</h3>
           <div class="faq-toggle">
             <svg class="icon-down" width="20" height="20">
-              <use href="/team-04-js/assets/icons-vBFqUzCb.svg#icon-arrow-down"></use>
+              <use href="/team-04-js/assets/icons-C2NAn8ql.svg#icon-arrow-down"></use>
             </svg>
             <svg class="icon-up" width="20" height="20">
-              <use href="/team-04-js/assets/icons-vBFqUzCb.svg#icon-arrow-up"></use>
+              <use href="/team-04-js/assets/icons-C2NAn8ql.svg#icon-arrow-up"></use>
             </svg>
           </div>
         </div>
@@ -223,10 +352,10 @@
           <h3>Do you provide advice or support?</h3>
           <div class="faq-toggle">
             <svg class="icon-down" width="20" height="20">
-              <use href="/team-04-js/assets/icons-vBFqUzCb.svg#icon-arrow-down"></use>
+              <use href="/team-04-js/assets/icons-C2NAn8ql.svg#icon-arrow-down"></use>
             </svg>
             <svg class="icon-up" width="20" height="20">
-              <use href="/team-04-js/assets/icons-vBFqUzCb.svg#icon-arrow-up"></use>
+              <use href="/team-04-js/assets/icons-C2NAn8ql.svg#icon-arrow-up"></use>
             </svg>
           </div>
         </div>
@@ -245,10 +374,10 @@
           <h3>What payment methods do you accept?</h3>
           <div class="faq-toggle">
             <svg class="icon-down" width="20" height="20">
-              <use href="/team-04-js/assets/icons-vBFqUzCb.svg#icon-arrow-down"></use>
+              <use href="/team-04-js/assets/icons-C2NAn8ql.svg#icon-arrow-down"></use>
             </svg>
             <svg class="icon-up" width="20" height="20">
-              <use href="/team-04-js/assets/icons-vBFqUzCb.svg#icon-arrow-up"></use>
+              <use href="/team-04-js/assets/icons-C2NAn8ql.svg#icon-arrow-up"></use>
             </svg>
           </div>
         </div>
@@ -268,10 +397,10 @@
           </h3>
           <div class="faq-toggle">
             <svg class="icon-down" width="20" height="20">
-              <use href="/team-04-js/assets/icons-vBFqUzCb.svg#icon-arrow-down"></use>
+              <use href="/team-04-js/assets/icons-C2NAn8ql.svg#icon-arrow-down"></use>
             </svg>
             <svg class="icon-up" width="20" height="20">
-              <use href="/team-04-js/assets/icons-vBFqUzCb.svg#icon-arrow-up"></use>
+              <use href="/team-04-js/assets/icons-C2NAn8ql.svg#icon-arrow-up"></use>
             </svg>
           </div>
         </div>
@@ -375,7 +504,7 @@
         aria-label="Previous review"
       >
         <svg class="slider-icon">
-          <use href="/team-04-js/assets/icons-vBFqUzCb.svg#icon-arrow-narrow-left"></use>
+          <use href="/team-04-js/assets/icons-C2NAn8ql.svg#icon-arrow-narrow-left"></use>
         </svg>
       </button>
       <button
@@ -383,7 +512,7 @@
         aria-label="Next review"
       >
         <svg class="slider-icon">
-          <use href="/team-04-js/assets/icons-vBFqUzCb.svg#icon-arrow-narrow-left"></use>
+          <use href="/team-04-js/assets/icons-C2NAn8ql.svg#icon-arrow-narrow-left"></use>
         </svg>
       </button>
     </div>
