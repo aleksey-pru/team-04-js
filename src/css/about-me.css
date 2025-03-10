@@ -1,44 +1,12 @@
-body {
+.about-me {
   background: #1c1d20;
+  padding: 32px 0;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.container {
+.about-me-container {
   max-width: 375px;
   padding: 0 16px;
   margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-    padding: 0 32px;
-  }
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .about-me-card {
@@ -87,11 +55,12 @@ img {
   background-color: #1c1d20 !important;
   border: none !important;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2) !important;
+  margin-top: 20px;
 }
 
 .about-me-box-menu {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -102,6 +71,10 @@ img {
   font-size: 16px;
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .about-me-ac-button::after {
@@ -109,19 +82,26 @@ img {
 }
 
 .about-me-ac-button {
-  border: 1px solid rgba(250, 250, 250, 0.2);
+  border: 1px solid rgba(250, 250, 250, 0.2) !important;
   border-radius: 50%;
-  padding: 9px;
-  width: 36px;
-  height: 36px;
   background-color: transparent;
+  width: 40px !important;
+  height: 40px !important;
+
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .about-me-svg {
-  stroke: #fafafa;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-me-item-text {
@@ -181,13 +161,22 @@ img {
 }
 
 .swiper-svg {
-  stroke: #3b3b3b;
+  stroke: none;
   fill: #3b3b3b;
 }
 
 /*   MEDIA    */
 
 @media screen and (min-width: 768px) {
+  .about-me {
+    padding-bottom: 48px;
+  }
+
+  .about-me-container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
   .about-me-card {
     max-width: 704px;
     margin-bottom: 64px;
@@ -196,7 +185,7 @@ img {
   .about-me-title {
     line-height: 1.05;
     font-size: 38px;
-
+    height: 700px;
     max-width: 704px;
     padding: 64px;
   }
@@ -209,11 +198,6 @@ img {
     margin-bottom: 64px;
     gap: 32px;
   }
-  .icon {
-    padding: 10px;
-    width: 40px;
-    height: 40px;
-  }
 
   .about-me-slide {
     width: 600px;
@@ -222,6 +206,15 @@ img {
 }
 
 @media screen and (min-width: 1440px) {
+  .about-me {
+    padding: 48px 0 82px;
+  }
+
+  .about-me-container {
+    max-width: 1440px;
+    padding: 0 32px;
+  }
+
   .about-me-card {
     max-width: 1376px;
     height: 700px;

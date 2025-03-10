@@ -12,15 +12,27 @@ new Accordion('.accordion-container', {
   openOnInit: [0],
   beforeOpen: function (element) {
     const icon = element.querySelector('.about-me-svg');
-    icon.style.transform = 'rotate(180deg)';
+    icon.style.transform = 'rotate(180deg) translate(50%, 50%)';
   },
   beforeClose: function (element) {
     const icon = element.querySelector('.about-me-svg');
-    icon.style.transform = 'rotate(0deg)';
+    icon.style.transform = 'rotate(0deg) translate(-50%, -50%)';
   },
 });
 
-const swiper = new Swiper('.swiper', {
+document.addEventListener('DOMContentLoaded', function () {
+  setTimeout(() => {
+    const firstItem = document.querySelector('.about-me-item');
+    if (firstItem) {
+      const firstIcon = firstItem.querySelector('.about-me-svg');
+      if (firstIcon) {
+        firstIcon.style.transform = 'rotate(180deg) translate(50%, 50%)';
+      }
+    }
+  }, 50);
+});
+
+new Swiper('.swiper', {
   loop: true,
   freeMode: false,
   centeredSlides: false,
