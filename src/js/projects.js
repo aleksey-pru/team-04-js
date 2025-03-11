@@ -1,8 +1,10 @@
-import Swiper from 'swiper/bundle';
-import 'swiper/swiper-bundle.css';
+import 'swiper/css';
+import Swiper from 'swiper';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 
 window.addEventListener('load', () => {
-const projectsSwiper = new Swiper('.projects-swiper', {
+  const projectsSwiper = new Swiper('.projects-swiper', {
+  modules: [Navigation, Keyboard, Mousewheel], 
   loop: false,
   slidesPerView: 1,
   slidesPerGroup: 1,
