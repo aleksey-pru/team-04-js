@@ -47,7 +47,7 @@ function applyResponsiveStyles() {
   const containerReviews = document.querySelector('.container-reviews');
   const reviewsSection = document.querySelector('.reviews');
   const sliderButtons = document.querySelectorAll('.slider-btn');
-  const slides = document.querySelectorAll('review-card');
+  const slides = document.querySelectorAll('.review-card');
   const screenWidth = window.innerWidth;
 
   slides.forEach((slide, index, array) => {
