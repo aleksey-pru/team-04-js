@@ -108,6 +108,7 @@ ul {
 }
 
 .project-details-btn {
+    display: inline-block;
     border-radius: 60px;
     border: none;
     padding: 13px 32px;
