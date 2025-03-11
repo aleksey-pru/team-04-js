@@ -8,8 +8,10 @@ ul {
 
 .projects {
     min-width: 320px;
-    height: 952px;
-    padding: 0 16px;
+    min-height: 1016px;
+    padding-top: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
     background-color: #1C1D20;
     position: relative;
 
@@ -30,15 +32,18 @@ ul {
 @media screen and (min-width: 768px) {
     .projects {
         min-width: 768px;
-        height: 1379px;
-        padding: 0 32px;
+        min-height: 1475px;
+        padding-top: 96px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .projects {
         min-width: 1440px;
-        height: 813px;
+        min-height: 977px;
+        padding-top: 164px;
     }
 }
 
@@ -82,6 +87,10 @@ ul {
 }
 
 .content {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
     border: 1px solid rgba(28, 29, 32, 0.2);
     border-radius: 60px;
     padding: 13px 18px;
@@ -243,6 +252,7 @@ ul {
     width: 52px;
     height: 52px;
     transform: rotate(180deg);
+    cursor: pointer;
 }
 
 .swiper-btn-right {
@@ -251,6 +261,7 @@ ul {
     padding: 14px;
     width: 52px;
     height: 52px;
+    cursor: pointer;
 }
 
 .swiper-arrow {
