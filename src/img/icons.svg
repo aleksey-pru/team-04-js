@@ -76,5 +76,9 @@
                 stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667"
                 d="M16 16c3.314 0 6-2.686 6-6s-2.686-6-6-6c-3.314 0-6 2.686-6 6s2.686 6 6 6z"></path>
         </symbol>
+        <symbol id="icon-arrow-grey" viewBox="0 0 32 32">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.6" d="M5.334 16h21.333"></path>
+             <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.6" d="M18.666 8l8 8-8 8"></path>
+        </symbol>
     </defs>
 </svg>
