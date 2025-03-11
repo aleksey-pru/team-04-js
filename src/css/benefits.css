@@ -38,6 +38,9 @@
   height: 48px;
   background: #ed3b44;
   margin-bottom: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .benefits-list-item-title {
   font-weight: 600;
@@ -64,6 +67,7 @@
   font-size: 15px;
   letter-spacing: -0.02em;
   color: #fafafa;
+  display: inline-block;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -72,7 +76,7 @@
     padding: 0 32px;
   }
   .benefits {
-    padding-top: 96px;
+    padding-top: 164px;
   }
   .benefits-list {
     display: flex;
