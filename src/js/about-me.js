@@ -1,8 +1,9 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-import Swiper from 'swiper/bundle';
-import 'swiper/swiper-bundle.css';
+import 'swiper/css';
+import Swiper from 'swiper';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 
 function initAboutMeAccordion() {
   const aboutMeAc = new Accordion('.about-me-list', {
@@ -40,6 +41,7 @@ function initAboutMeSwiper() {
   const slides = document.querySelectorAll('.about-me-slide-item');
 
   const aboutMeSwiper = new Swiper('.about-me-slide ', {
+    modules: [Navigation, Keyboard, Mousewheel],
     loop: true,
     freeMode: false,
     centeredSlides: false,
