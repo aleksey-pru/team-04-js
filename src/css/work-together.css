@@ -159,24 +159,23 @@ a {
     padding: 32px 16px 32px 16px;
   }
 
-    .work-together-img {
-      width: 40px;
-      height: 40px;
-    }
+  .work-together-img {
+    width: 40px;
+    height: 40px;
+  }
 
-.text-block-small {
+  .text-block-small {
     padding-left: 8px;
-      padding-bottom: 4px;
-}
+    padding-bottom: 4px;
+  }
 
-    .text-img-block {
+  .text-img-block {
     font-size: 40px;
-    }
+  }
 
-.text-block {
+  .text-block {
     font-size: 40px;
-}
-
+  }
 
   input#email,
   input#comment {
