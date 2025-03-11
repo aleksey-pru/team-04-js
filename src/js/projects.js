@@ -1,7 +1,8 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 
-const swiper = new Swiper('.projects-swiper', {
+window.addEventListener('load', () => {
+const projectsSwiper = new Swiper('.projects-swiper', {
   loop: false,
   slidesPerView: 1,
   slidesPerGroup: 1,
@@ -21,21 +22,30 @@ const swiper = new Swiper('.projects-swiper', {
     disabledClass: 'swiper-btn-disabled',
   },
   watchOverflow: true,
+  preloadImages: true,
 });
 
-swiper.on('slideChange', function () {
+projectsSwiper.on('slideChange', function () {
   const prevButton = document.querySelector('.swiper-btn-left');
   const nextButton = document.querySelector('.swiper-btn-right');
 
-  if (swiper.isBeginning) {
+  if (projectsSwiper.isBeginning) {
     prevButton.classList.add('swiper-btn-disabled');
   } else {
     prevButton.classList.remove('swiper-btn-disabled');
   }
 
-  if (swiper.isEnd) {
+  if (projectsSwiper.isEnd) {
     nextButton.classList.add('swiper-btn-disabled');
   } else {
     nextButton.classList.remove('swiper-btn-disabled');
   }
+
+   const activeIndex = projectsSwiper.activeIndex;
+
+  if (activeIndex === 1 || activeIndex === 2) {
+    projectsSwiper.update();
+  }
+
+});
 });
