@@ -2,7 +2,7 @@ import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-const btn = document.querySelector('.icon-cross');
+const btn = document.querySelector('.icon-x');
 const overlay = document.querySelector('.modal-overlay');
 const email = document.querySelector('[name="email"]');
 const comment = document.querySelector('[name="comment"]');
