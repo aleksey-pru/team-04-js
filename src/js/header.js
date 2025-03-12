@@ -6,11 +6,21 @@ const navLinks = document.querySelectorAll('.mob-menu-nav-link');
 // Функція для відкриття мобільного меню
 function openMobileMenu() {
     mobileMenu.classList.add('is-open');
+    blockScroll();
 }
 
 // Функція для закриття мобільного меню
 function closeMobileMenu() {
     mobileMenu.classList.remove('is-open');
+    enableScroll();
+}
+
+function blockScroll() {
+    document.body.style.overflow = 'hidden';
+}
+
+function enableScroll() {
+    document.body.style.overflow = 'visible';
 }
 
 // Додаємо обробник подій для відкриття мобільного меню
