@@ -21,7 +21,7 @@
 .benefits-list-item {
   border-radius: 20px;
   padding: 24px;
-  width: calc(100%-30px);
+  width: calc(100% - 30px);
   height: 270px;
   background: #242527;
   margin-bottom: 16px;

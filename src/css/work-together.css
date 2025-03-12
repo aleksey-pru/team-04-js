@@ -6,7 +6,7 @@
   line-height: 1;
   padding-top: 80px;
   padding-bottom: 196px;
-  letter-spacing: 2%;
+  letter-spacing: -0.03em;
   list-style-type: none;
   font-weight: 500;
   color: #fafafa;
@@ -282,7 +282,6 @@ a {
 }
 
 .modal h2 {
-  padding-top: -30px;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
@@ -300,8 +299,7 @@ a {
   color: rgba(250, 250, 250, 0.6);
 }
 
-.letswork-form input,
-.letswork-form input:blur {
+.letswork-form input {
   border: none;
   background: transparent;
   padding: 8px;
