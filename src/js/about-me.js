@@ -41,6 +41,7 @@ function initAboutMeSwiper() {
   const aboutMeSwiper = new Swiper('.about-me-slide ', {
     modules: [Navigation, Keyboard, Mousewheel],
     loop: true,
+    slidesPerView: 1,
     freeMode: false,
     centeredSlides: false,
     simulateTouch: true,
@@ -61,30 +62,33 @@ function initAboutMeSwiper() {
       eventsTarget: '.about-me-slide-list',
     },
     breakpoints: {
-      320: { slidesPerView: 2 },
-      768: { slidesPerView: 3 },
-      1440: { slidesPerView: 6 },
+      320: { slidesPerView: 2, slidesPerGroup: 1 },
+      768: { slidesPerView: 3, slidesPerGroup: 1 },
+      1440: { slidesPerView: 6, slidesPerGroup: 1 },
     },
-
     on: {
       init: function () {
+        this.slides.forEach(slide => slide.classList.remove('active-slide'));
         this.slides[0].classList.add('active-slide');
       },
       slideChange: function () {
-        this.slides[this.previousIndex]?.classList.remove('active-slide');
-        this.slides[this.activeIndex]?.classList.add('active-slide');
+        this.slides.forEach(slide => slide.classList.remove('active-slide'));
+        this.slides[this.activeIndex].classList.add('active-slide');
       },
     },
   });
 
   const boxSlide = document.querySelector('.box-slide');
+  let isTabListenerActive = false;
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && !isTabListenerActive) {
           document.addEventListener('keydown', handleTabKey);
-        } else {
+          isTabListenerActive = true;
+        } else if (!entry.isIntersecting && isTabListenerActive) {
           document.removeEventListener('keydown', handleTabKey);
+          isTabListenerActive = false;
         }
       });
     },
