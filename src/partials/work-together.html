@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/work-together.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <footer class="letswork-together" id="work-together">
+    <div class="container-footer">
+      <h2 class="title-letswork" hidden>Let’s work together</h2>
+
+      <div class="text-block">
+        <div class="text-img-block">
+          <img
+            width="70px"
+            height="70px"
+            class="work-together-img"
+            srcset="
+              /img/projects/image-work-with-x1.png 1x,
+              /img/projects/image-work-with-x2.png 2x
+            "
+            src="/img/projects/image-work-with-x1.png"
+            alt="Man on the photo"
+          />
+          <p class="text-block-small">
+            Let’s&nbsp;<span class="work-word">work</span>
+          </p>
+        </div>
+        <p class="word-below">together</p>
+      </div>
+      <form class="letswork-form">
+        <div class="input">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="clients@gmail.com"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <input
+          type="text"
+          id="comment"
+          name="comment"
+          placeholder="comments"
+          autocomplete="off"
+          required
+        />
+        <button type="submit" class="send-btn">Send</button>
+      </form>
+      <div class="contact-information">
+        <a class="contact-email" href="mailto:lloydjefferson@gmail.com"
+          >lloydjefferson@gmail.com</a
+        >
+        <a class="contact-phone" href="tel:+380 11 1111 11 11"
+          >+380 11 1111 11 11</a
+        >
+      </div>
+
+      <div class="modal-overlay">
+        <div class="modal">
+          <svg class="icon-x" width="24" height="24">
+            <use href="/img/icons.svg#icon-x"></use>
+          </svg>
+          <h2>Thank you for your interest in cooperation!</h2>
+          <p>
+            The manager will contact you shortly to discuss further details and
+            opportunities for cooperation. Please stay in touch.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/js/work-together.js"></script>
+  </footer>
+</html>

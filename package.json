@@ -18,6 +18,8 @@
   "license": "ISC",
   "dependencies": {
     "accordion-js": "^3.4.0",
+    "axios": "^1.8.2",
+    "izitoast": "^1.4.0",
     "modern-normalize": "^3.0.1",
     "swiper": "^11.2.5",
     "vite-plugin-full-reload": "^1.2.0",
