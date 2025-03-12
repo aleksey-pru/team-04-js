@@ -31,10 +31,6 @@
   gap: 16px;
 }
 
-.swiper-slide {
-  margin-right: 0px !important;
-}
-
 .review-card {
   border-radius: 20px;
   padding: 32px 24px;
@@ -44,6 +40,7 @@
   display: flex;
   flex-direction: column;
   background: #26272b;
+  margin-right: 0px !important;
 }
 
 .review-avatar {
@@ -154,6 +151,9 @@
   }
   .reviews-title {
     font-size: 16px;
+  }
+  .slider-controls {
+    gap: 12px;
   }
   .slider-btn {
     width: 52px;

@@ -4,7 +4,7 @@ import { Navigation, Keyboard } from 'swiper/modules';
 
 const API_URL = 'https://portfolio-js.b.goit.study/api/reviews';
 
-const reviewsList = document.querySelector('.swiper-wrapper');
+const reviewsList = document.querySelector('.reviews-list');
 const prevButton = document.querySelector('.swiper-button-prev');
 const nextButton = document.querySelector('.swiper-button-next');
 
@@ -47,7 +47,7 @@ function applyResponsiveStyles() {
   const containerReviews = document.querySelector('.container-reviews');
   const reviewsSection = document.querySelector('.reviews');
   const sliderButtons = document.querySelectorAll('.slider-btn');
-  const slides = document.querySelectorAll('.swiper-slide');
+  const slides = document.querySelectorAll('.review-card');
   const screenWidth = window.innerWidth;
 
   slides.forEach((slide, index, array) => {
