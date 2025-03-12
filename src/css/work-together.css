@@ -11,7 +11,7 @@
   font-weight: 500;
   color: #fafafa;
   background-color: #1c1d20;
-  background-image: url('../img/projects/footer.png');
+  background-image: url('/img/projects/footer.png');
   background-position: right bottom;
   background-repeat: no-repeat;
 }
@@ -142,6 +142,10 @@ a {
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
+  .letswork-together {
+    background-image: url('/img/projects/footer-tablet.png');
+  }
+
   .container-footer {
     max-width: 768px;
     padding-left: 32px;
@@ -166,6 +170,7 @@ a {
   .letswork-together {
     padding-top: 32px;
     padding-bottom: 32px;
+    background-image: url('/img/projects/footer-mobile.png');
   }
 
   .container-footer {
