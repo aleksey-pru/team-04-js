@@ -38,8 +38,6 @@ function initAboutMeAccordion() {
 initAboutMeAccordion();
 
 function initAboutMeSwiper() {
-  const slides = document.querySelectorAll('.about-me-slide-item');
-
   const aboutMeSwiper = new Swiper('.about-me-slide ', {
     modules: [Navigation, Keyboard, Mousewheel],
     loop: true,
@@ -79,12 +77,30 @@ function initAboutMeSwiper() {
     },
   });
 
-  slides.forEach(slide => {
-    slide.setAttribute('tabindex', '0');
-    slide.addEventListener('keydown', () => {
-      slide.click();
-    });
-  });
+  const boxSlide = document.querySelector('.box-slide');
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          document.addEventListener('keydown', handleTabKey);
+        } else {
+          document.removeEventListener('keydown', handleTabKey);
+        }
+      });
+    },
+    {
+      root: null,
+      threshold: 0.5,
+    }
+  );
+  observer.observe(boxSlide);
+
+  function handleTabKey(event) {
+    if (event.key === 'Tab') {
+      event.preventDefault();
+      aboutMeSwiper.slideNext();
+    }
+  }
 
   return aboutMeSwiper;
 }
