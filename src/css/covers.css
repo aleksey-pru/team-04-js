@@ -35,7 +35,7 @@
   height: 508px;
   width: 100%;
   overflow: hidden;
-  background: border-box url(../img/projects/Rectangle_13.png) center/cover no-repeat;
+  background: border-box url(../img/projects/Rectangle_13.webp) center/cover no-repeat;
   background-color: black;
 }
 
@@ -91,7 +91,7 @@
   
   .marquee {
     height: 960px;
-    background: border-box url(../img/projects/Rectangle_13_1.png) center/cover no-repeat;
+    background: border-box url(../img/projects/Rectangle_13_1.webp) center/cover no-repeat;
   }
   
   .marquee__inner {
@@ -124,6 +124,6 @@
 
   .marquee {
     /* width: 1440px; */
-    background: border-box url(../img/projects/Rectangle_13_2.png) center/ cover no-repeat;
+    background: border-box url(../img/projects/Rectangle_13_2.webp) center/ cover no-repeat;
   }
 }
