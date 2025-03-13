@@ -168,6 +168,10 @@
 }
 
 .about-me-slide-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   width: 40px;
   height: 40px;
 }
